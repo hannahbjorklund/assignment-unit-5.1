@@ -13,7 +13,7 @@ const me = {
   firstName: 'Hannah',
   lastName: 'Bjorklund',
   hasSiblings: false,
-  shoeCount: 2,
+  shoeCount: 4,
   favThreeFoods: ['pho', 'chicken and dumplings', 'apple crisp']
 };
 console.log('A little about me:', me);
@@ -40,7 +40,9 @@ console.log("Last favorite food:", me.favThreeFoods[2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-
+console.log("Shoe count:", me.shoeCount);
+me.shoeCount++;
+console.log("Got a new pair!", me.shoeCount);
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -48,3 +50,5 @@ console.log("Last favorite food:", me.favThreeFoods[2]);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'green';
+console.log("Favorite color:", me.favoriteColor);
